@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>responding to button</title>
+</head>
+<body>
+  
+  <p id ="text">hello world</p>
+  <button id= "mybutton">Change text</button> 
+  <p id="p2">javascript is ...</p>
+  <button id="mybutton2">Append text</button>
+  <p id="empty-p"></p>
+  <button id="create_p">create text</button>
+  <p id="moretext">this is some text</p>
+  <button id="style sheet">style text</button>
+  <script type="text/javascript">
+    document.getElementById("mybutton").onclick = function(){
+      //alert("clicked!");
+      document.getElementById("text").innerHTML ="hello Ana";//changes the page data using innerHTML
+      };
+    document.getElementById("mybutton2").onclick = function(){
+      document.getElementById("p2").innerHTML ="I think " +document.getElementById("p2").innerHTML + "awesome";
+    }
+    document.getElementById("create_p").onclick= function(){
+      document.getElementById("empty-p").innerHTML = "<h1>hi there</h1>";
+    }
+    document.getElementById("style sheet").onclick = function(){
+      document.getElementById("moretext").style.color = "red";
+      document.getElementById("moretext").style.fontSize = "50px";
+      document.getElementById("moretext").style.display = "none";
+
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>if statement</title>
+</head>
+<body>
+  <input type="text" id="textinput">
+  <button id="textchanger"> change the text</button>
+  <p id="text">this is some text</p>
+  <script type="text/javascript">
+    document.getElementById("textchanger").onclick =function(){
+      var textentered ="";
+      textentered = document.getElementById("textinput").value;//get value entered in textarea in var
+      if(textentered==""){
+        alert("nothing is entered");
+      }
+      else{
+        document.getElementById("text").innerHTML = textentered;
+
+      }
+    }
+  </script>
+</body>
+</html>
